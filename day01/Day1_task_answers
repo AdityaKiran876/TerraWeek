@@ -1,0 +1,4 @@
+What is Terraform and how can it help you manage infrastructure as code?
+ans. Terraform is a tool with which we can build infrastructure without using the UI but using a language called HCL. With terraform we can create a blueprint of our infrastructure and can manage it.
+
+Why do we need Terraform and how does it simplify infrastructure provisioning?
