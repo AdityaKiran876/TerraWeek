@@ -2,3 +2,19 @@ What is Terraform and how can it help you manage infrastructure as code?
 ans. Terraform is a tool with which we can build infrastructure without using the UI but using a language called HCL. With terraform we can create a blueprint of our infrastructure and can manage it.
 
 Why do we need Terraform and how does it simplify infrastructure provisioning?
+ans. We need terraform to build our infrastructure and save it as a code. With Terraform we can manage up our infrastructure as per our requirements without using the UI in the cloud services and also we can add various services whenever required. 
+We can also make changes in the code and make new infrastrucutre.
+
+How can you install Terraform and set up the environment for AWS, Azure, or GCP?
+ans. To set up Terraform in AWS use these commands:
+wget -O - https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(grep -oP '(?<=UBUNTU_CODENAME=).*' /etc/os-release || lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+sudo apt update && sudo apt install terraform
+To confirm the installation run this command- terraform --version
+
+Explain the important terminologies of Terraform with the example at least (5 crucial terminologies).
+1. Infrastructure as Code (IAC)--- IAC means creating infratructure using a coding language. The language is known as HCL(Hashicorp Configuration Language).
+2. Infrastrucutre provisioning--- Infrastrucutre provisioning means creating Infrastrucutre in cloud services. It means setting up servers or any environment.
+3. Providers--- Providers are used to intall the cloud dependencies to set up the infrastrucutre from our servers.
+4. terraform init-- This command is used set up the backend and other dependencies to run the terraform files and create infrastructure.
+5. Attributes-- Attributes are the specifications of our infrastrucutre resources whoch we want to set up.
